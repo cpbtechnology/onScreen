@@ -1,5 +1,5 @@
 /** 
- * onScreen.js v0.2.1
+ * onScreen.js v0.2.2
  * Checks if matched elements are inside the viewport.
  *
  * Copyright onScreen Contributors, 2013 Licensed under the MIT license:
@@ -12,7 +12,7 @@
 ;(function ($, window, document, undefined) {
 
   var pluginName = 'onScreen',
-      version = 'v0.2.1',
+      version = 'v0.2.2',
       defaults = {
         container: window,
         direction: 'vertical',
@@ -359,8 +359,14 @@
 
       $(window).off('resize.' + eventNamespace);
 
+      $.removeData(
+        self.element,
+        pluginName
+      );
+
       self.$container = null;
       self.$element = null;
+      self.element = null;
     }
   };
 
