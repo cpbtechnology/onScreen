@@ -1,6 +1,6 @@
     {
     "name": "onScreen",
-    "version": "0.2.2",
+    "version": "0.2.3",
     "description": "A jQuery plugin that does stuff when the matched elements are visible (as inside the viewport).",
     "main": "jquery.onscreen.js",
     "keywords": [
